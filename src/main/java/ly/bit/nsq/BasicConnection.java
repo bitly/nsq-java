@@ -26,6 +26,7 @@ public class BasicConnection extends Connection {
 		this.reader = reader;
 		this.port = port;
 		this.sock = new Socket();
+		this.sock.setKeepAlive(true);
 	}
 
 	@Override
